@@ -1,5 +1,8 @@
+import archivo.ControlBusqueda;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ControlBusqueda controlBusqueda = new ControlBusqueda();
+        controlBusqueda.buscarPalabraEnCarpeta();
     }
 }
