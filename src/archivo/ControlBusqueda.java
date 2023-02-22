@@ -18,6 +18,11 @@ public class ControlBusqueda {
             return;
         }
 
+        if (resultados.size() == 0) {
+            interaccionUsuario.mostrarTexto("No se encontraron archivos de texto en la carpeta.");
+            return;
+        }
+
         for (ResultadoCoincidencia resultado : resultados) {
             interaccionUsuario.mostrarTexto(resultado.toString());
         }
